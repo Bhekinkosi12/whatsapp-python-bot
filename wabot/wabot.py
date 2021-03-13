@@ -23,6 +23,8 @@ class WABot():
         answer = self.send_requests('sendMessage', data)
         return answer
 
+    
+    
     def welcome(self,chatID, noWelcome = False):
         welcome_string = ''
         if (noWelcome == False):

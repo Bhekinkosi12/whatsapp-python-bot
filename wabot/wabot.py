@@ -37,6 +37,9 @@ Commands:
 5. ptt - get a voice message
 6. geo - get a location
 7. group - create a group with the bot"""
+            
+            
+            
         return self.send_message(chatID, welcome_string)
 
     
@@ -59,6 +62,8 @@ Commands:
                         'pdf' : 'presentation.pdf',
                         'mp4' : 'video.mp4',
                         'mp3' : 'mp3file.mp3'}
+        
+        
         if format in availableFiles.keys():
             data = {
                         'chatId' : chatID,
